@@ -34,6 +34,30 @@
       key = "<space>fm";
       action = "<CMD>lua vim.lsp.buf.format()<CR>";
     }
+    {
+      key = ";";
+      action = ":";
+    }
+    {
+      mode = "i";
+      key = "<C-l>";
+      action = "l";
+    }
+    {
+      mode = "i";
+      key = "<C-k>";
+      action = "k";
+    }
+    {
+      mode = "i";
+      key = "<C-j>";
+      action = "j";
+    }
+    {
+      mode = "i";
+      key = "<C-h>";
+      action = "h";
+    }
 
     # Terminal Mappings
     {
