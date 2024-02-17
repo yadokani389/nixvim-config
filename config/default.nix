@@ -17,76 +17,10 @@
     ./lsp.nix
     ./treesitter.nix
     ./toggleterm.nix
+    ./keymaps.nix
   ];
 
   colorschemes.dracula.enable = true;
 
-  keymaps = [
-    # Global Mappings
-    # Default mode is "" which means normal-visual-op
-    {
-      # Toggle NvimTree
-      key = "<C-n>";
-      action = "<CMD>NvimTreeToggle<CR>";
-    }
-    {
-      # Format file
-      key = "<space>fm";
-      action = "<CMD>lua vim.lsp.buf.format()<CR>";
-    }
-    {
-      key = ";";
-      action = ":";
-    }
-    {
-      mode = "i";
-      key = "<C-l>";
-      action = "l";
-    }
-    {
-      mode = "i";
-      key = "<C-k>";
-      action = "k";
-    }
-    {
-      mode = "i";
-      key = "<C-j>";
-      action = "j";
-    }
-    {
-      mode = "i";
-      key = "<C-h>";
-      action = "h";
-    }
-
-    # Terminal Mappings
-    {
-      # Escape terminal mode using ESC
-      mode = "t";
-      key = "<esc>";
-      action = "<C-\\><C-n>";
-    }
-
-    # Rust
-    {
-      # Start standalone rust-analyzer (fixes issues when opening files from nvim tree)
-      mode = "n";
-      key = "<leader>rs";
-      action = "<CMD>RustStartStandaloneServerForBuffer<CR>";
-    }
-
-    # {
-    #   # Mode can be a string or a list of strings
-    #   mode = "n";
-    #   key = "<leader>p";
-    #   action = "require('my-plugin').do_stuff";
-    #   lua = true;
-    #   # Note that all of the mapping options are now under the `options` attrs
-    #   options = {
-    #     silent = true;
-    #     desc = "My plugin does stuff";
-    #   };
-    # }
-  ];
 
 }
