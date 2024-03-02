@@ -5,7 +5,6 @@
       diagnostics = {
         golangci_lint.enable = true;
         ktlint.enable = true;
-        shellcheck.enable = true;
         statix.enable = true;
       };
       formatting = {
@@ -15,7 +14,6 @@
         ktlint.enable = true;
         nixfmt.enable = true;
         markdownlint.enable = true;
-        rustfmt.enable = true;
       };
     };
   };
