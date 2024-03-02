@@ -47,22 +47,18 @@
       action = "<Esc>O";
     }
     {
-      mode = "n";
       key = "<S-l>";
       action = "10l";
     }
     {
-      mode = "n";
       key = "<S-k>";
       action = "10k";
     }
     {
-      mode = "n";
       key = "<S-j>";
       action = "10j";
     }
     {
-      mode = "n";
       key = "<S-h>";
       action = "10h";
     }

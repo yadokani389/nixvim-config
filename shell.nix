@@ -17,5 +17,7 @@ pkgs.mkShell {
 
     # Kotlin
     kotlin-native
+
+    ripgrep
   ];
 }
