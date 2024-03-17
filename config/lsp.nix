@@ -11,12 +11,18 @@
       nixd.enable = true;
       ruff-lsp.enable = true;
     };
-    keymaps.lspBuf = {
-      "gd" = "definition";
-      "gD" = "references";
-      "gt" = "type_definition";
-      "gi" = "implementation";
-      "K" = "hover";
+    keymaps = {
+      diagnostic = {
+        "<space>k" = "goto_prev";
+        "<space>j" = "goto_next";
+      };
+      lspBuf = {
+        "gd" = "definition";
+        "gD" = "references";
+        "gt" = "type_definition";
+        "gi" = "implementation";
+        "gk" = "hover";
+      };
     };
   };
   plugins.rust-tools.enable = true;

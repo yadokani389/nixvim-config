@@ -78,5 +78,31 @@
       key = "<leader>rs";
       action = "<CMD>RustStartStandaloneServerForBuffer<CR>";
     }
+
+    # Tab
+    {
+      key = "<M-S-l>";
+      action = "<CMD>BufferMoveNext<CR>";
+    }
+    {
+      key = "<M-S-h>";
+      action = "<CMD>BufferMovePrevious<CR>";
+    }
+    {
+      key = "<M-p>";
+      action = "<CMD>BufferPin<CR>";
+    }
+    {
+      key = "<M-l>";
+      action = "<cmd>BufferNext<cR>";
+    }
+    {
+      key = "<M-h>";
+      action = "<cmd>BufferPrevious<CR>";
+    }
+    {
+      key = "<M-x>";
+      action = "<CMD>BufferClose<CR>";
+    }
   ];
 }

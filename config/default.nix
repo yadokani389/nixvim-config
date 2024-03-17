@@ -18,6 +18,7 @@
     ./treesitter.nix
     ./toggleterm.nix
     ./keymaps.nix
+    ./barbar.nix
   ];
 
   colorschemes.dracula.enable = true;
