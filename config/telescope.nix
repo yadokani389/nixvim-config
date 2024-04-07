@@ -43,7 +43,11 @@
         action = "oldfiles";
         desc = "Find history";
       };
+      "<leader>fh" = {
+        action = "help_tags";
+        desc = "Find help";
+      };
     };
-    extensions.fzf-native = { enable = true; };
+    extensions.fzf-native.enable = true;
   };
 }
