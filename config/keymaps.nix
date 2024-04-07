@@ -4,13 +4,8 @@
     # Default mode is "" which means normal-visual-op
     {
       # Toggle NvimTree
-      key = "<C-n>";
+      key = "<leader>e";
       action = "<CMD>NvimTreeToggle<CR>";
-    }
-    {
-      # Format file
-      key = "<space>fm";
-      action = "<CMD>lua vim.lsp.buf.format()<CR>";
     }
     {
       key = ";";
@@ -71,38 +66,36 @@
       action = "<C-\\><C-n>";
     }
 
-    # Rust
-    {
-      # Start standalone rust-analyzer (fixes issues when opening files from nvim tree)
-      mode = "n";
-      key = "<leader>rs";
-      action = "<CMD>RustStartStandaloneServerForBuffer<CR>";
-    }
-
     # Tab
     {
-      key = "<M-S-l>";
-      action = "<CMD>BufferMoveNext<CR>";
-    }
-    {
-      key = "<M-S-h>";
-      action = "<CMD>BufferMovePrevious<CR>";
-    }
-    {
-      key = "<M-p>";
+      key = "<leader>bp";
       action = "<CMD>BufferPin<CR>";
     }
     {
-      key = "<M-l>";
+      key = "<leader>bl";
       action = "<cmd>BufferNext<cR>";
     }
     {
-      key = "<M-h>";
+      key = "<leader>bh";
       action = "<cmd>BufferPrevious<CR>";
     }
     {
-      key = "<M-x>";
+      key = "<leader>bc";
       action = "<CMD>BufferClose<CR>";
+    }
+
+    # Git
+    {
+      key = "<leader>gd";
+      action = "<CMD>DiffviewOpen<CR>";
+    }
+    {
+      key = "<leader>gh";
+      action = "<CMD>DiffviewFileHistory<CR>";
+    }
+    {
+      key = "<leader>gv";
+      action = "<CMD>DiffviewClose<CR>";
     }
   ];
 }

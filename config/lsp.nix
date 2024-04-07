@@ -12,16 +12,14 @@
       ruff-lsp.enable = true;
     };
     keymaps = {
-      diagnostic = {
-        "<space>k" = "goto_prev";
-        "<space>j" = "goto_next";
-      };
       lspBuf = {
-        "gd" = "definition";
-        "gD" = "references";
-        "gt" = "type_definition";
-        "gi" = "implementation";
-        "gk" = "hover";
+        "<leader>ld" = "definition";
+        "<leader>lR" = "references";
+        "<leader>lt" = "type_definition";
+        "<leader>li" = "implementation";
+        "<leader>lh" = "hover";
+        "<leader>lr" = "rename";
+        "<leader>lf" = "format";
       };
     };
   };

@@ -19,7 +19,10 @@
     ./toggleterm.nix
     ./keymaps.nix
     ./barbar.nix
+    ./which-key.nix
+    ./diffview.nix
   ];
 
   colorschemes.dracula.enable = true;
+  globals.mapleader = " ";
 }
