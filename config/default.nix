@@ -21,6 +21,7 @@
     ./barbar.nix
     ./which-key.nix
     ./diffview.nix
+    ./comment.nix
   ];
 
   colorschemes.dracula.enable = true;
