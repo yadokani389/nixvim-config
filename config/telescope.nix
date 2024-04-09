@@ -27,14 +27,6 @@
         action = "grep_string";
         desc = "Find word under cursor";
       };
-      "<leader>ff" = {
-        action = "find_files";
-        desc = "Find files";
-      };
-      "<leader>fw" = {
-        action = "live_grep";
-        desc = "Find words";
-      };
       "<leader>fk" = {
         action = "keymaps";
         desc = "Find keymaps";
@@ -48,6 +40,24 @@
         desc = "Find help";
       };
     };
+
     extensions.fzf-native.enable = true;
   };
+
+  keymaps = [
+    {
+      mode = "n";
+      key = "<leader>ff";
+      action =
+        "<cmd>lua require('telescope.builtin').find_files{ hidden = true, no_ignore = true }<cr>";
+      options.desc = "Find files";
+    }
+    {
+      mode = "n";
+      key = "<leader>fw";
+      action =
+        "<cmd>lua require('telescope.builtin').live_grep{ additional_args = function(args) return vim.list_extend(args, { '--hidden', '--no-ignore' }) end,}<cr>";
+      options.desc = "Find words";
+    }
+  ];
 }
