@@ -22,6 +22,7 @@
     ./which-key.nix
     ./diffview.nix
     ./comment.nix
+    ./dap.nix
   ];
 
   colorschemes.dracula.enable = true;

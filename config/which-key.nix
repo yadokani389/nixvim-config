@@ -16,6 +16,7 @@
       "<leader>b" = "󰓩Buffer";
       "<leader>e" = "󰙅Toggle explorer";
       "<leader>g" = "Git";
+      "<leader>d" = "debug";
     };
   };
 }

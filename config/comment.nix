@@ -3,12 +3,11 @@
     enable = true;
 
     toggler = {
-      line = "<leader>cc";
-      block = "<leader>cb";
+      line = "<leader>/";
     };
 
     opleader = {
-      block = "<leader>c";
+      block = "<leader>/";
     };
   };
 }
