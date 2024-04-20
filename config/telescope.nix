@@ -39,6 +39,14 @@
         action = "help_tags";
         desc = "Find help";
       };
+      "<leader>ff" = {
+        action = "find_files";
+        desc = "Find files";
+      };
+      "<leader>fw" = {
+        action = "live_grep";
+        desc = "Find words";
+      };
     };
 
     extensions.fzf-native.enable = true;
@@ -47,17 +55,17 @@
   keymaps = [
     {
       mode = "n";
-      key = "<leader>ff";
+      key = "<leader>fF";
       action =
         "<cmd>lua require('telescope.builtin').find_files{ hidden = true, no_ignore = true }<cr>";
-      options.desc = "Find files";
+      options.desc = "Find all files";
     }
     {
       mode = "n";
-      key = "<leader>fw";
+      key = "<leader>fW";
       action =
         "<cmd>lua require('telescope.builtin').live_grep{ additional_args = function(args) return vim.list_extend(args, { '--hidden', '--no-ignore' }) end,}<cr>";
-      options.desc = "Find words";
+      options.desc = "Find words in all files";
     }
   ];
 }
