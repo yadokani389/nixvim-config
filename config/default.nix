@@ -25,6 +25,6 @@
     ./dap.nix
   ];
 
-  colorschemes.onedark.enable = true;
+  colorschemes.one.enable = true;
   globals.mapleader = " ";
 }

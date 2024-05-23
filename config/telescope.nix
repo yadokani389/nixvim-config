@@ -4,48 +4,48 @@
     keymaps = {
       "<leader>gb" = {
         action = "git_branches";
-        desc = "Git branches";
+        options.desc = "Git branches";
       };
       "<leader>gc" = {
         action = "git_commits";
-        desc = "Git commits (repository)";
+        options.desc = "Git commits (repository)";
       };
       "<leader>gC" = {
         action = "git_bcommits";
-        desc = "Git commits (current file)";
+        options.desc = "Git commits (current file)";
       };
       "<leader>gs" = {
         action = "git_status";
-        desc = "Git status";
+        options.desc = "Git status";
       };
 
       "<leader>f/" = {
         action = "current_buffer_fuzzy_find";
-        desc = "Find words in current buffer";
+        options.desc = "Find words in current buffer";
       };
       "<leader>fc" = {
         action = "grep_string";
-        desc = "Find word under cursor";
+        options.desc = "Find word under cursor";
       };
       "<leader>fk" = {
         action = "keymaps";
-        desc = "Find keymaps";
+        options.desc = "Find keymaps";
       };
       "<leader>fo" = {
         action = "oldfiles";
-        desc = "Find history";
+        options.desc = "Find history";
       };
       "<leader>fh" = {
         action = "help_tags";
-        desc = "Find help";
+        options.desc = "Find help";
       };
       "<leader>ff" = {
         action = "find_files";
-        desc = "Find files";
+        options.desc = "Find files";
       };
       "<leader>fw" = {
         action = "live_grep";
-        desc = "Find words";
+        options.desc = "Find words";
       };
     };
 

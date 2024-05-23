@@ -1,13 +1,11 @@
 {
-  plugins.comment-nvim = {
+  plugins.comment = {
     enable = true;
 
-    toggler = {
-      line = "<leader>/";
-    };
+    settings = {
+      toggler = { line = "<leader>/"; };
 
-    opleader = {
-      block = "<leader>/";
+      opleader = { block = "<leader>/"; };
     };
   };
 }
