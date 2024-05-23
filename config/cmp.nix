@@ -14,18 +14,17 @@
 
     cmp = {
       enable = true;
-      autoEnableSources = true;
-      /* settings.sources = [
-           { name = "nvim_lsp"; }
-           { name = "luasnip"; }
-           { name = "buffer"; }
-           { name = "nvim_lua"; }
-           { name = "path"; }
-           { name = "nvim_lsp_signature_help"; }
-         ];
-      */
 
       settings = {
+        sources = [
+          { name = "nvim_lsp"; }
+          { name = "luasnip"; }
+          { name = "buffer"; }
+          { name = "nvim_lua"; }
+          { name = "path"; }
+          { name = "nvim_lsp_signature_help"; }
+        ];
+
         formatting = {
           fields = [ "abbr" "kind" "menu" ];
           format =
