@@ -31,6 +31,36 @@
       dap-ui = {
         enable = true;
         floating.mappings = { close = [ "<ESC>" "q" ]; };
+        layouts = [
+          {
+            elements = [
+              {
+                id = "scopes";
+                size = 0.8;
+              }
+              {
+                id = "watches";
+                size = 0.2;
+              }
+            ];
+            position = "left";
+            size = 40;
+          }
+          {
+            elements = [
+              {
+                id = "repl";
+                size = 0.5;
+              }
+              {
+                id = "console";
+                size = 0.5;
+              }
+            ];
+            position = "bottom";
+            size = 10;
+          }
+        ];
       };
       dap-virtual-text = { enable = true; };
     };
