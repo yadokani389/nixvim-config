@@ -14,6 +14,7 @@
         kotlin-language-server.enable = true;
         nixd.enable = true;
         ruff-lsp.enable = true;
+        dartls.enable = true;
       };
       keymaps = {
         lspBuf = {
