@@ -23,6 +23,7 @@
     ./diffview.nix
     ./comment.nix
     ./dap.nix
+    ./luasnip.nix
   ];
 
   colorschemes.one.enable = true;
