@@ -16,6 +16,7 @@
         ruff-lsp.enable = true;
         dartls.enable = true;
         typst-lsp.enable = true;
+        typos-lsp.enable = true;
       };
       keymaps = {
         lspBuf = {
