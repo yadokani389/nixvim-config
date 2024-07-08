@@ -57,6 +57,42 @@
       key = "<S-h>";
       action = "10h";
     }
+    {
+      key = "d";
+      action = ''"_d'';
+    }
+    {
+      key = "D";
+      action = ''"_D'';
+    }
+    {
+      key = "c";
+      action = ''"_c'';
+    }
+    {
+      key = "C";
+      action = ''"_C'';
+    }
+    {
+      key = "s";
+      action = ''"_s'';
+    }
+    {
+      key = "S";
+      action = ''"_S'';
+    }
+    {
+      key = "x";
+      action = "d";
+    }
+    {
+      key = "xx";
+      action = "dd";
+    }
+    {
+      key = "X";
+      action = "D";
+    }
 
     # Terminal Mappings
     {
