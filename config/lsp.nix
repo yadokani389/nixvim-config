@@ -15,7 +15,7 @@
         nixd.enable = true;
         ruff-lsp.enable = true;
         dartls.enable = true;
-        typst-lsp.enable = true;
+        tinymist.enable = true;
         typos-lsp.enable = true;
       };
       keymaps = {
