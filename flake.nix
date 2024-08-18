@@ -2,11 +2,12 @@
   description = "A nixvim configuration";
 
   inputs = {
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     nixvim.url = "github:nix-community/nixvim";
     flake-utils.url = "github:numtide/flake-utils";
   };
 
-  outputs = { self, nixpkgs, nixvim, flake-utils, ... }@inputs:
+  outputs = { nixpkgs, nixvim, flake-utils, ... }@inputs:
     let config = import ./config; # import the module directly
     in flake-utils.lib.eachDefaultSystem (system:
       let
@@ -31,7 +32,5 @@
           # Lets you run `nix run .` to start nixvim
           default = nvim;
         };
-
-        devShells.default = import ./shell.nix { inherit pkgs; };
       });
 }
