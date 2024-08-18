@@ -2,21 +2,60 @@
   plugins.which-key = {
     enable = true;
 
-    registrations = {
-      "<leader>l" = "LSP";
-      "<leader>ld" = "Definition";
-      "<leader>lR" = "References";
-      "<leader>lt" = "Type_definition";
-      "<leader>li" = "Implementation";
-      "<leader>lh" = "Hover";
-      "<leader>lr" = "Rename";
-      "<leader>lf" = "Format file";
+    settings.spec = [
+      {
+        __unkeyed-1 = "<leader>l";
+        group = "LSP";
+      }
+      {
+        __unkeyed-1 = "<leader>ld";
+        group = "Definition";
+      }
+      {
+        __unkeyed-1 = "<leader>lR";
+        group = "References";
+      }
+      {
+        __unkeyed-1 = "<leader>lt";
+        group = "Type_definition";
+      }
+      {
+        __unkeyed-1 = "<leader>li";
+        group = "Implementation";
+      }
+      {
+        __unkeyed-1 = "<leader>lh";
+        group = "Hover";
+      }
+      {
+        __unkeyed-1 = "<leader>lr";
+        group = "Rename";
+      }
+      {
+        __unkeyed-1 = "<leader>lf";
+        group = "Format file";
+      }
 
-      "<leader>f" = "Find";
-      "<leader>b" = "󰓩Buffer";
-      "<leader>e" = "󰙅Toggle explorer";
-      "<leader>g" = "Git";
-      "<leader>d" = "debug";
-    };
+      {
+        __unkeyed-1 = "<leader>f";
+        group = "Find";
+      }
+      {
+        __unkeyed-1 = "<leader>b";
+        group = "Buffer";
+      }
+      {
+        __unkeyed-1 = "<leader>e";
+        group = "Toggle explorer";
+      }
+      {
+        __unkeyed-1 = "<leader>g";
+        group = "Git";
+      }
+      {
+        __unkeyed-1 = "<leader>d";
+        group = "debug";
+      }
+    ];
   };
 }
