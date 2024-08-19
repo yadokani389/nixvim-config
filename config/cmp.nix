@@ -25,6 +25,7 @@
           { name = "nvim_lua"; }
           { name = "path"; }
           { name = "nvim_lsp_signature_help"; }
+          { name = "copilot"; }
         ];
 
         formatting = {
@@ -140,6 +141,13 @@
             end, {'i', 's'})'';
         };
       };
+    };
+
+    copilot-cmp.enable = true;
+    copilot-lua = {
+      enable = true;
+      suggestion = { enabled = false; };
+      panel = { enabled = false; };
     };
   };
 }
