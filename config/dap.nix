@@ -1,14 +1,39 @@
-{ pkgs, ... }: {
+{ pkgs, ... }:
+let
+  codelldb-config = {
+    name = "Launch (CodeLLDB)";
+    type = "codelldb";
+    request = "launch";
+    program.__raw = # lua
+      ''
+        function()
+            return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. '/', "file")
+        end
+      '';
+    cwd = "\${workspaceFolder}";
+    stopOnEntry = false;
+  };
+
+in {
   plugins.dap = {
     enable = true;
-
-    adapters.servers = {
-      codelldb = {
-        port = "\${port}";
-        executable.command =
-          "${pkgs.vscode-extensions.vadimcn.vscode-lldb}/share/vscode/extensions/vadimcn.vscode-lldb/adapter/codelldb";
-        executable.args = [ "--port" "\${port}" ];
+    adapters = {
+      servers = {
+        codelldb = {
+          port = 13000;
+          executable = {
+            command =
+              "${pkgs.vscode-extensions.vadimcn.vscode-lldb}/share/vscode/extensions/vadimcn.vscode-lldb/adapter/codelldb";
+            args = [ "--port" "13000" ];
+          };
+        };
       };
+    };
+
+    configurations = {
+      cpp = [ codelldb-config ];
+
+      rust = [ codelldb-config ];
     };
 
     signs = {
@@ -241,19 +266,4 @@
       };
     }
   ];
-
-  extraConfigLua = ''
-    local dap = require("dap")
-    dap.configurations.cpp = {
-      {
-        name = "Launch",
-    	  type = "codelldb",
-        request = "launch",
-        program = function()
-          return vim.fn.input('Path of the executable: ', vim.fn.getcwd() .. '/a.out', 'file')
-        end,
-        cwd = "''${workspaceFolder}",
-      },
-    }
-  '';
 }
