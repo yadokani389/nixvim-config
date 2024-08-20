@@ -1,4 +1,4 @@
-{ pkgs, options, ... }: {
+{ pkgs, ... }: {
   plugins = {
     lsp = {
       enable = true;
@@ -30,7 +30,10 @@
         };
       };
     };
-    clangd-extensions.enable = true;
+    clangd-extensions = {
+      enable = true;
+      inlayHints.inline = "false";
+    };
     rust-tools.enable = true;
   };
 }
