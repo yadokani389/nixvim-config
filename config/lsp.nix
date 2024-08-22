@@ -19,6 +19,10 @@
         typos-lsp.enable = true;
       };
       keymaps = {
+        diagnostic = {
+          "<leader>lj" = "goto_next";
+          "<leader>lk" = "goto_prev";
+        };
         lspBuf = {
           "<leader>ld" = "definition";
           "<leader>lR" = "references";
