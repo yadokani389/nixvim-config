@@ -149,5 +149,6 @@
       suggestion = { enabled = false; };
       panel = { enabled = false; };
     };
+    copilot-chat.enable = true;
   };
 }
