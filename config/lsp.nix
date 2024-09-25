@@ -16,7 +16,10 @@
         ruff-lsp.enable = true;
         dartls.enable = true;
         tinymist.enable = true;
-        typos-lsp.enable = true;
+        typos-lsp = {
+          enable = true;
+          rootDir = "require 'lspconfig.util'.root_pattern('Cargo.toml')";
+        };
       };
       keymaps = {
         diagnostic = {

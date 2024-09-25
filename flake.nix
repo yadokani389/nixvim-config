@@ -11,16 +11,14 @@
     let config = import ./config; # import the module directly
     in flake-utils.lib.eachDefaultSystem (system:
       let
-        pkgs = import nixpkgs { inherit system; };
+        pkgs = import nixpkgs {
+          inherit system;
+          overlays = [ (import ./overlay.nix) ];
+        };
         nixvim' = nixvim.legacyPackages.${system};
         nvim = nixvim'.makeNixvimWithModule {
           inherit pkgs;
           module = config;
         };
-      in {
-        packages = {
-          # Lets you run `nix run .` to start nixvim
-          default = nvim;
-        };
-      });
+      in { packages.default = nvim; });
 }
