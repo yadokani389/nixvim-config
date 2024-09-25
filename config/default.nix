@@ -1,5 +1,3 @@
-{ pkgs, ... }:
-
 {
   imports = [
     ./autosave.nix
@@ -13,7 +11,6 @@
     ./cmp.nix
     ./none-ls.nix
     ./wilder.nix
-    ./ionide.nix
     ./lsp.nix
     ./treesitter.nix
     ./toggleterm.nix
