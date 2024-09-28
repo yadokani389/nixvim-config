@@ -68,4 +68,5 @@
       options.desc = "Find words in all files";
     }
   ];
+  plugins.web-devicons.enable = true;
 }
