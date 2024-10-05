@@ -20,6 +20,7 @@
     ./diffview.nix
     ./comment.nix
     ./dap.nix
+    ./dropbar.nix
   ];
 
   colorschemes.one.enable = true;

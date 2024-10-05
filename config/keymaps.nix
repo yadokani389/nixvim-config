@@ -133,5 +133,12 @@
       key = "<leader>gv";
       action = "<CMD>DiffviewClose<CR>";
     }
+    {
+      key = "<leader>p";
+      action = "<CMD>lua require('dropbar.api').pick()<CR>";
+      options = {
+        desc = "Dropbar pick";
+      };
+    }
   ];
 }
