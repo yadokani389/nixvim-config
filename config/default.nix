@@ -21,6 +21,7 @@
     ./comment.nix
     ./dap.nix
     ./dropbar.nix
+    ./noice.nix
   ];
 
   colorschemes.one.enable = true;
