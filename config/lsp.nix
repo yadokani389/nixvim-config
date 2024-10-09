@@ -11,12 +11,12 @@
           '';
         };
         gopls.enable = true;
-        kotlin-language-server.enable = true;
+        kotlin_language_server.enable = true;
         nixd.enable = true;
-        ruff-lsp.enable = true;
+        ruff_lsp.enable = true;
         dartls.enable = true;
         tinymist.enable = true;
-        typos-lsp = {
+        typos_lsp = {
           enable = true;
           rootDir = "require 'lspconfig.util'.root_pattern('Cargo.toml')";
         };
