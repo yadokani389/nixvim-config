@@ -22,6 +22,7 @@
     ./dap.nix
     ./dropbar.nix
     ./noice.nix
+    ./rustaceanvim.nix
   ];
 
   colorschemes.one.enable = true;

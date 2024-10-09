@@ -32,8 +32,6 @@ in {
 
     configurations = {
       cpp = [ codelldb-config ];
-
-      rust = [ codelldb-config ];
     };
 
     signs = {

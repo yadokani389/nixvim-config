@@ -42,7 +42,6 @@
       enable = true;
       inlayHints.inline = "false";
     };
-    rust-tools.enable = true;
   };
 
   extraPlugins = [
