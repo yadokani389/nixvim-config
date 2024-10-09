@@ -1,7 +1,8 @@
-{
+{ pkgs, ... }: {
   plugins = {
     lsp = {
       enable = true;
+      inlayHints = true;
       servers = {
         clangd = {
           enable = true;
@@ -43,4 +44,17 @@
     };
     rust-tools.enable = true;
   };
+
+  extraPlugins = [
+    (pkgs.vimUtils.buildVimPlugin {
+      name = "lsp-endhints";
+      src = pkgs.fetchFromGitHub {
+        owner = "chrisgrieser";
+        repo = "nvim-lsp-endhints";
+        rev = "master";
+        sha256 = "sha256-dCySjZoCxcCkt8D1UVJF9wQheU8vgmDxkI0JeGURpnQ=";
+      };
+    })
+  ];
+  extraConfigLua = "require('lsp-endhints').enable()";
 }
