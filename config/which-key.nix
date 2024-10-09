@@ -35,6 +35,14 @@
         __unkeyed-1 = "<leader>lf";
         group = "Format file";
       }
+      {
+        __unkeyed-1 = "<leader>lj";
+        group = "Goto next diagnostic";
+      }
+      {
+        __unkeyed-1 = "<leader>lk";
+        group = "Goto previous diagnostic";
+      }
 
       {
         __unkeyed-1 = "<leader>f";
