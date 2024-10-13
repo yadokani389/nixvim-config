@@ -16,6 +16,8 @@
         nixd.enable = true;
         ruff_lsp.enable = true;
         dartls.enable = true;
+        denols.enable = true;
+        ts_ls.enable = true;
         tinymist.enable = true;
         typos_lsp = {
           enable = true;
