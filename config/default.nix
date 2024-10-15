@@ -23,6 +23,7 @@
     ./dropbar.nix
     ./noice.nix
     ./rustaceanvim.nix
+    ./vim-translator.nix
   ];
 
   colorschemes.one.enable = true;
