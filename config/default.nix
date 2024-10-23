@@ -24,6 +24,7 @@
     ./noice.nix
     ./rustaceanvim.nix
     ./vim-translator.nix
+    ./markdown-preview.nix
   ];
 
   colorschemes.one.enable = true;
