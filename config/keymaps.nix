@@ -13,26 +13,6 @@
     }
     {
       mode = "i";
-      key = "<C-l>";
-      action = "<Right>";
-    }
-    {
-      mode = "i";
-      key = "<C-k>";
-      action = "<Up>";
-    }
-    {
-      mode = "i";
-      key = "<C-j>";
-      action = "<Down>";
-    }
-    {
-      mode = "i";
-      key = "<C-h>";
-      action = "<Left>";
-    }
-    {
-      mode = "i";
       key = "<C-CR>";
       action = "<Esc>o";
     }
