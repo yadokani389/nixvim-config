@@ -25,6 +25,8 @@
     ./rustaceanvim.nix
     ./vim-translator.nix
     ./markdown-preview.nix
+    ./skkeleton.nix
+    ./cmp-skkeleton.nix
   ];
 
   colorschemes.one.enable = true;
