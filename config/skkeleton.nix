@@ -42,10 +42,12 @@
     }
   ];
 
-  # TODO: add skkeleton as a source in cmp
   extraConfigLua = ''
     vim.fn['skkeleton#config']({
-        globalDictionaries = {'${pkgs.skkDictionaries.l}/share/skk/SKK-JISYO.L'}
+      globalDictionaries = {'${pkgs.skkDictionaries.l}/share/skk/SKK-JISYO.L'},
+      globalKanaTableFiles = {'~/.config/skk/azik_us.rule'},
+      immediatelyOkuriConvert = false,
+      lowercaseMap = {['+'] = ';'},
     })
   '';
 }
