@@ -45,7 +45,7 @@
   extraConfigLua = ''
     vim.fn['skkeleton#config']({
       globalDictionaries = {'${pkgs.skkDictionaries.l}/share/skk/SKK-JISYO.L'},
-      globalKanaTableFiles = {'~/.config/skk/azik_us.rule'},
+      globalKanaTableFiles = {'${toString ./.}/azik_us.rule'},
       immediatelyOkuriConvert = false,
       lowercaseMap = {['+'] = ';'},
     })
