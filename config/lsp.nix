@@ -23,6 +23,7 @@
           enable = true;
           rootDir = "require 'lspconfig.util'.root_pattern('Cargo.toml')";
         };
+        volar.enable = true;
       };
       keymaps = {
         diagnostic = {
