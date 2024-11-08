@@ -1,4 +1,4 @@
-{
+{ pkgs, neovim-overlay, ... }: {
   imports = [
     ./autosave.nix
     ./auto-pairs.nix
@@ -30,6 +30,7 @@
     ./typst.nix
   ];
 
+  package = neovim-overlay.packages.${pkgs.system}.default;
   colorschemes.one.enable = true;
   globals.mapleader = " ";
 }

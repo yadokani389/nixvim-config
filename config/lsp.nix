@@ -18,11 +18,7 @@
         dartls.enable = true;
         denols.enable = true;
         ts_ls.enable = true;
-        tinymist = {
-          enable = true;
-          rootDir = "require 'lspconfig.util'.root_pattern('*.typ')";
-          extraOptions = { offset_encoding = "utf-8"; };
-        };
+        tinymist.enable = true;
         typos_lsp = {
           enable = true;
           rootDir = "require 'lspconfig.util'.root_pattern('Cargo.toml')";
