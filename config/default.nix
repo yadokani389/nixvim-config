@@ -27,6 +27,7 @@
     ./markdown-preview.nix
     ./skkeleton.nix
     ./cmp-skkeleton.nix
+    ./typst.nix
   ];
 
   colorschemes.one.enable = true;
