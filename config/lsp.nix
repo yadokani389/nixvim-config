@@ -24,6 +24,7 @@
           rootDir = "require 'lspconfig.util'.root_pattern('Cargo.toml')";
         };
         volar.enable = true;
+        svelte.enable = true;
       };
       keymaps = {
         diagnostic = {
