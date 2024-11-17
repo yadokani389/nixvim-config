@@ -25,6 +25,8 @@
         };
         volar.enable = true;
         svelte.enable = true;
+        jsonls.enable = true;
+        taplo.enable = true;
       };
       keymaps = {
         diagnostic = {
