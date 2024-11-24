@@ -5,7 +5,11 @@
       nixGrammars = true;
       settings = {
         indent.enable = true;
-        highlight.enable = true;
+        highlight = {
+          enable = true;
+          # for typst-vim conceal
+          disable = [ "typst" ];
+        };
       };
     };
     treesitter-textobjects = {
