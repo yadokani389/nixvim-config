@@ -5,7 +5,6 @@
     ./options.nix
     ./bufferline.nix
     ./telescope.nix
-    ./nvim-tree.nix
     ./lightline.nix
     ./git.nix
     ./cmp.nix
@@ -28,6 +27,7 @@
     ./skkeleton.nix
     ./cmp-skkeleton.nix
     ./typst.nix
+    ./yazi.nix
   ];
 
   package = neovim-overlay.packages.${pkgs.system}.default;

@@ -3,11 +3,6 @@
     # Global Mappings
     # Default mode is "" which means normal-visual-op
     {
-      # Toggle NvimTree
-      key = "<leader>e";
-      action = "<CMD>NvimTreeToggle<CR>";
-    }
-    {
       key = ";";
       action = ":";
     }
