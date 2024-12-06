@@ -27,6 +27,7 @@
         svelte.enable = true;
         jsonls.enable = true;
         taplo.enable = true;
+        pyright.enable = true;
       };
       keymaps = {
         diagnostic = {
