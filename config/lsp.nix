@@ -28,6 +28,10 @@
         taplo.enable = true;
         pyright.enable = true;
         ruff.enable = true;
+        hls = {
+          enable = true;
+          installGhc = true;
+        };
       };
       keymaps = {
         diagnostic = {
