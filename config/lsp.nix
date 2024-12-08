@@ -28,6 +28,7 @@
         jsonls.enable = true;
         taplo.enable = true;
         pyright.enable = true;
+        ruff.enable = true;
       };
       keymaps = {
         diagnostic = {
