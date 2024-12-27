@@ -32,5 +32,6 @@
 
   package = neovim-overlay.packages.${pkgs.system}.default;
   colorschemes.one.enable = true;
+  highlightOverride.Normal.bg = "none";
   globals.mapleader = " ";
 }
