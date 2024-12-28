@@ -28,6 +28,7 @@
     ./cmp-skkeleton.nix
     ./typst.nix
     ./yazi.nix
+    ./tiny-code-action.nix
   ];
 
   package = neovim-overlay.packages.${pkgs.system}.default;
