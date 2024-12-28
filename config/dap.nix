@@ -30,9 +30,7 @@ in {
       };
     };
 
-    configurations = {
-      cpp = [ codelldb-config ];
-    };
+    configurations = { cpp = [ codelldb-config ]; };
 
     signs = {
       dapBreakpoint = {

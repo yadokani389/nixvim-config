@@ -8,7 +8,7 @@
         owner = "voldikss";
         repo = "vim-translator";
         rev = "master";
-        sha256 = "sha256-ow5axYMtH433hXwYF5Oz3wWT/24VUHpALrH+Phlwk90=";
+        hash = "sha256-ow5axYMtH433hXwYF5Oz3wWT/24VUHpALrH+Phlwk90=";
       };
     };
     config = ''
