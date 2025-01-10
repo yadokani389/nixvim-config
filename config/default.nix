@@ -1,4 +1,4 @@
-{ pkgs, neovim-overlay, ... }: {
+{
   imports = [
     ./autosave.nix
     ./auto-pairs.nix
@@ -31,7 +31,6 @@
     ./tiny-code-action.nix
   ];
 
-  package = neovim-overlay.packages.${pkgs.system}.default;
   colorschemes.one.enable = true;
   highlightOverride.Normal.bg = "none";
   globals.mapleader = " ";
