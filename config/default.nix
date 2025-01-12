@@ -18,6 +18,7 @@
     ./typst.nix
     ./yazi.nix
     ./tiny-code-action.nix
+    ./ccc.nix
   ];
 
   colorschemes.one.enable = true;
