@@ -1,4 +1,4 @@
-{
+{ pkgs, ... }: {
   imports = [
     ./options.nix
     ./telescope.nix
@@ -45,4 +45,6 @@
     };
     markdown-preview.enable = true;
   };
+
+  extraPlugins = with pkgs.vimPlugins; [ mkdir-nvim ];
 }
