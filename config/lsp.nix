@@ -33,6 +33,7 @@
           enable = true;
           installGhc = true;
         };
+        wgsl_analyzer.enable = true;
       };
       keymaps = {
         diagnostic = {
