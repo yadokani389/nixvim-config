@@ -53,7 +53,7 @@
     };
     clangd-extensions = {
       enable = true;
-      inlayHints.inline = "false";
+      settings.inlay_hints.inline = false;
     };
   };
 
