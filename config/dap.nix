@@ -15,42 +15,11 @@ let
   };
 
 in {
-  plugins.dap = {
-    enable = true;
-    adapters = {
-      servers = {
-        codelldb = {
-          port = 13000;
-          executable = {
-            command =
-              "${pkgs.vscode-extensions.vadimcn.vscode-lldb}/share/vscode/extensions/vadimcn.vscode-lldb/adapter/codelldb";
-            args = [ "--port" "13000" ];
-          };
-        };
-      };
-    };
-
-    configurations = { cpp = [ codelldb-config ]; };
-
-    signs = {
-      dapBreakpoint = {
-        text = "●";
-        texthl = "DapBreakpoint";
-      };
-      dapBreakpointCondition = {
-        text = "●";
-        texthl = "DapBreakpointCondition";
-      };
-      dapLogPoint = {
-        text = "◆";
-        texthl = "DapLogPoint";
-      };
-    };
-
-    extensions = {
-      dap-python = { enable = true; };
-      dap-ui = {
-        enable = true;
+  plugins = {
+    dap-python.enable = true;
+    dap-ui = {
+      enable = true;
+      settings = {
         floating.mappings = { close = [ "<ESC>" "q" ]; };
         layouts = [
           {
@@ -83,7 +52,39 @@ in {
           }
         ];
       };
-      dap-virtual-text = { enable = true; };
+    };
+    dap-virtual-text = { enable = true; };
+    dap = {
+      enable = true;
+      adapters = {
+        servers = {
+          codelldb = {
+            port = 13000;
+            executable = {
+              command =
+                "${pkgs.vscode-extensions.vadimcn.vscode-lldb}/share/vscode/extensions/vadimcn.vscode-lldb/adapter/codelldb";
+              args = [ "--port" "13000" ];
+            };
+          };
+        };
+      };
+
+      configurations = { cpp = [ codelldb-config ]; };
+
+      signs = {
+        dapBreakpoint = {
+          text = "●";
+          texthl = "DapBreakpoint";
+        };
+        dapBreakpointCondition = {
+          text = "●";
+          texthl = "DapBreakpointCondition";
+        };
+        dapLogPoint = {
+          text = "◆";
+          texthl = "DapLogPoint";
+        };
+      };
     };
   };
 
