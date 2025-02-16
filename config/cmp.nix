@@ -1,10 +1,9 @@
 # # Source: https://github.com/hmajid2301/dotfiles/blob/ab7098387426f73c461950c7c0a4f8fb4c843a2c/home-manager/editors/nvim/plugins/coding/cmp.nix
 {
-  extraLuaPackages = ps:
-    [
-      # Required by luasnip
-      ps.jsregexp
-    ];
+  extraLuaPackages = ps: [
+    # Required by luasnip
+    ps.jsregexp
+  ];
 
   plugins = {
     luasnip.enable = true;
@@ -30,7 +29,11 @@
         ];
 
         formatting = {
-          fields = [ "abbr" "kind" "menu" ];
+          fields = [
+            "abbr"
+            "kind"
+            "menu"
+          ];
           format =
             # lua
             ''
@@ -93,17 +96,33 @@
 
         window = {
           completion = {
-            winhighlight =
-              "FloatBorder:CmpBorder,Normal:CmpPmenu,CursorLine:CmpSel,Search:PmenuSel";
+            winhighlight = "FloatBorder:CmpBorder,Normal:CmpPmenu,CursorLine:CmpSel,Search:PmenuSel";
             scrollbar = false;
             sidePadding = 0;
-            border = [ "╭" "─" "╮" "│" "╯" "─" "╰" "│" ];
+            border = [
+              "╭"
+              "─"
+              "╮"
+              "│"
+              "╯"
+              "─"
+              "╰"
+              "│"
+            ];
           };
 
           documentation = {
-            border = [ "╭" "─" "╮" "│" "╯" "─" "╰" "│" ];
-            winhighlight =
-              "FloatBorder:CmpBorder,Normal:CmpPmenu,CursorLine:CmpSel,Search:PmenuSel";
+            border = [
+              "╭"
+              "─"
+              "╮"
+              "│"
+              "╯"
+              "─"
+              "╰"
+              "│"
+            ];
+            winhighlight = "FloatBorder:CmpBorder,Normal:CmpPmenu,CursorLine:CmpSel,Search:PmenuSel";
           };
         };
 
@@ -116,8 +135,7 @@
           "<C-p>" = "cmp.mapping.scroll_docs(-4)";
           "<C-Space>" = "cmp.mapping.complete()";
           "<C-e>" = "cmp.mapping.close()";
-          "<CR>" =
-            "cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Insert, select = true })";
+          "<CR>" = "cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Insert, select = true })";
           "<Tab>" = ''
             cmp.mapping(function(fallback)
               local luasnip = require('luasnip')

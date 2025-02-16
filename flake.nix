@@ -7,8 +7,15 @@
     flake-utils.url = "github:numtide/flake-utils";
   };
 
-  outputs = { nixpkgs, nixvim, flake-utils, ... }:
-    flake-utils.lib.eachDefaultSystem (system:
+  outputs =
+    {
+      nixpkgs,
+      nixvim,
+      flake-utils,
+      ...
+    }:
+    flake-utils.lib.eachDefaultSystem (
+      system:
       let
         pkgs = import nixpkgs { inherit system; };
         config = import ./config;
@@ -17,5 +24,9 @@
           inherit pkgs;
           module = config;
         };
-      in { packages.default = nvim; });
+      in
+      {
+        packages.default = nvim;
+      }
+    );
 }

@@ -1,4 +1,5 @@
-{ pkgs, ... }: {
+{ pkgs, ... }:
+{
   imports = [
     ./options.nix
     ./telescope.nix
@@ -36,7 +37,11 @@
     };
     wilder = {
       enable = true;
-      modes = [ ":" "/" "?" ];
+      modes = [
+        ":"
+        "/"
+        "?"
+      ];
     };
     noice.enable = true;
     gitsigns = {

@@ -1,5 +1,6 @@
 # https://github.com/idiig/nixvim/blob/16e680494c34247a19d422fcc4dac59112e5d9a2/config/plugins/cjk/skkeleton.nix
-{ pkgs, lib, ... }: {
+{ pkgs, lib, ... }:
+{
   extraPackages = [ pkgs.deno ];
   extraPlugins = [
     pkgs.vimPlugins.denops-vim
@@ -13,8 +14,7 @@
         hash = "sha256-7oTJGGkUb3K8nzcPqlJrm316ECmgswy/+N8cTQghv3k=";
       };
       meta = {
-        description =
-          "skkeleton is a Vim/Neovim plugin that provides japanese input environment called SKK.";
+        description = "skkeleton is a Vim/Neovim plugin that provides japanese input environment called SKK.";
         homepage = "https://github.com/vim-skk/skkeleton";
         license = lib.licenses.zlib;
       };

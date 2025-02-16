@@ -1,4 +1,5 @@
-{ pkgs, ... }: {
+{ pkgs, ... }:
+{
   plugins.rustaceanvim = {
     enable = true;
     settings.dap = {

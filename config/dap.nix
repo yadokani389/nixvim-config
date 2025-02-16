@@ -14,13 +14,19 @@ let
     stopOnEntry = false;
   };
 
-in {
+in
+{
   plugins = {
     dap-python.enable = true;
     dap-ui = {
       enable = true;
       settings = {
-        floating.mappings = { close = [ "<ESC>" "q" ]; };
+        floating.mappings = {
+          close = [
+            "<ESC>"
+            "q"
+          ];
+        };
         layouts = [
           {
             elements = [
@@ -53,7 +59,9 @@ in {
         ];
       };
     };
-    dap-virtual-text = { enable = true; };
+    dap-virtual-text = {
+      enable = true;
+    };
     dap = {
       enable = true;
       adapters = {
@@ -61,15 +69,19 @@ in {
           codelldb = {
             port = 13000;
             executable = {
-              command =
-                "${pkgs.vscode-extensions.vadimcn.vscode-lldb}/share/vscode/extensions/vadimcn.vscode-lldb/adapter/codelldb";
-              args = [ "--port" "13000" ];
+              command = "${pkgs.vscode-extensions.vadimcn.vscode-lldb}/share/vscode/extensions/vadimcn.vscode-lldb/adapter/codelldb";
+              args = [
+                "--port"
+                "13000"
+              ];
             };
           };
         };
       };
 
-      configurations = { cpp = [ codelldb-config ]; };
+      configurations = {
+        cpp = [ codelldb-config ];
+      };
 
       signs = {
         dapBreakpoint = {
@@ -92,8 +104,7 @@ in {
     {
       mode = "n";
       key = "<leader>dB";
-      action =
-        "<cmd>lua require('dap').set_breakpoint(vim.fn.input('Breakpoint condition: '))<cr>";
+      action = "<cmd>lua require('dap').set_breakpoint(vim.fn.input('Breakpoint condition: '))<cr>";
       options = {
         silent = true;
         desc = "Breakpoint Condition";
@@ -120,8 +131,7 @@ in {
     {
       mode = "n";
       key = "<leader>da";
-      action =
-        ":make<cr><cmd>lua require('dap').continue({ before = get_args })<cr>";
+      action = ":make<cr><cmd>lua require('dap').continue({ before = get_args })<cr>";
       options = {
         silent = true;
         desc = "Run with Args";
@@ -254,7 +264,10 @@ in {
       };
     }
     {
-      mode = [ "n" "v" ];
+      mode = [
+        "n"
+        "v"
+      ];
       key = "<leader>de";
       action = "<cmd>lua require('dapui').eval()<cr>";
       options = {

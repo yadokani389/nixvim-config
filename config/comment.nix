@@ -3,9 +3,13 @@
     enable = true;
 
     settings = {
-      toggler = { line = "<leader>/"; };
+      toggler = {
+        line = "<leader>/";
+      };
 
-      opleader = { block = "<leader>/"; };
+      opleader = {
+        block = "<leader>/";
+      };
     };
   };
 }

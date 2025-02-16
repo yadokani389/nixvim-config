@@ -56,15 +56,13 @@
     {
       mode = "n";
       key = "<leader>fF";
-      action =
-        "<cmd>lua require('telescope.builtin').find_files{ hidden = true, no_ignore = true }<cr>";
+      action = "<cmd>lua require('telescope.builtin').find_files{ hidden = true, no_ignore = true }<cr>";
       options.desc = "Find all files";
     }
     {
       mode = "n";
       key = "<leader>fW";
-      action =
-        "<cmd>lua require('telescope.builtin').live_grep{ additional_args = function(args) return vim.list_extend(args, { '--hidden', '--no-ignore' }) end,}<cr>";
+      action = "<cmd>lua require('telescope.builtin').live_grep{ additional_args = function(args) return vim.list_extend(args, { '--hidden', '--no-ignore' }) end,}<cr>";
       options.desc = "Find words in all files";
     }
   ];
