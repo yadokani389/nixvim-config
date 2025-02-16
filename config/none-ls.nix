@@ -12,7 +12,6 @@
         gofmt.enable = true;
         goimports.enable = true;
         ktlint.enable = true;
-        nixfmt.enable = true;
         markdownlint.enable = true;
         typstyle.enable = true;
       };

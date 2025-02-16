@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{ lib, pkgs, ... }: {
   plugins = {
     lsp = {
       enable = true;
@@ -13,8 +13,13 @@
         };
         gopls.enable = true;
         kotlin_language_server.enable = true;
-        nixd.enable = true;
-        nil_ls.enable = true;
+        nil_ls = {
+          enable = true;
+          settings = {
+            formatting.command = [ "${lib.getExe pkgs.nixfmt-rfc-style}" ];
+            nix.flake.autoArchive = true;
+          };
+        };
         dartls.enable = true;
         denols.enable = true;
         ts_ls.enable = true;
