@@ -3,7 +3,7 @@
   plugins.rustaceanvim = {
     enable = true;
     settings = {
-      server.capabilities.textDocument.completion.completionItem.snippetSupport = false;
+      server.default_settings.rust-analyzer.completion.postfix.enable = false;
       dap = {
         autoloadConfigurations = true;
         adapter = {
