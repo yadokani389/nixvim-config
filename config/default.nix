@@ -20,6 +20,7 @@
     ./yazi.nix
     ./tiny-code-action.nix
     ./ccc.nix
+    ./dropbar.nix
   ];
 
   colorschemes.one.enable = true;
