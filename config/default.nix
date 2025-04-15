@@ -26,6 +26,7 @@
   colorschemes.one.enable = true;
   highlightOverride.Normal.bg = "none";
   globals.mapleader = " ";
+  opts.scrolloff = 3;
 
   plugins = {
     nvim-autopairs.enable = true;

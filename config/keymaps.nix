@@ -68,6 +68,11 @@
       key = "X";
       action = "D";
     }
+    {
+      mode = "n";
+      key = "q:";
+      action = "<nop>";
+    }
 
     # Terminal Mappings
     {
