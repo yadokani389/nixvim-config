@@ -102,16 +102,8 @@
 
     # Git
     {
-      key = "<leader>gd";
-      action = "<CMD>DiffviewOpen<CR>";
-    }
-    {
-      key = "<leader>gh";
-      action = "<CMD>DiffviewFileHistory<CR>";
-    }
-    {
-      key = "<leader>gv";
-      action = "<CMD>DiffviewClose<CR>";
+      key = "<leader>gl";
+      action = "<CMD>LazyGit<CR>";
     }
     {
       key = "<leader>p";
