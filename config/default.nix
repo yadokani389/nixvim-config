@@ -52,6 +52,7 @@
     };
     markdown-preview.enable = true;
     lazygit.enable = true;
+    render-markdown.enable = true;
   };
 
   extraPlugins = with pkgs.vimPlugins; [ mkdir-nvim ];
