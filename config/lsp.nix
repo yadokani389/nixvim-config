@@ -27,7 +27,7 @@
         tinymist.enable = true;
         typos_lsp = {
           enable = true;
-          rootDir = "require 'lspconfig.util'.root_pattern('Cargo.toml')";
+          rootMarkers = [ "Cargo.toml" ];
         };
         volar.enable = true;
         svelte.enable = true;
