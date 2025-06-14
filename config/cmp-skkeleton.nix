@@ -15,7 +15,7 @@ in
       version = "2024-06-01";
       src = pkgs.fetchFromGitHub cmpSkkeletonRepo;
       meta = {
-        description = "nvim-cmpのskkeletonソースです。";
+        description = "nvim-cmp source for skkeleton";
         homepage = "https://github.com/uga-rosa/cmp-skkeleton";
         # license = lib.licenses.zlib;
       };

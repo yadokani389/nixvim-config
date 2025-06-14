@@ -10,8 +10,8 @@
       src = pkgs.fetchFromGitHub {
         owner = "vim-skk";
         repo = "skkeleton";
-        rev = "2cdd414c1bfa8c363505b8dfc9f50ef2f446ea61";
-        hash = "sha256-7oTJGGkUb3K8nzcPqlJrm316ECmgswy/+N8cTQghv3k=";
+        rev = "3e019b331fbf9bd1d4539e7bd650a1c543125cee";
+        hash = "sha256-VDu8WypgpzY+Dd8KIPJXsvtBEwt5YiuGXn6HAUKCbIQ=";
       };
       meta = {
         description = "skkeleton is a Vim/Neovim plugin that provides japanese input environment called SKK.";

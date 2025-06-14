@@ -69,8 +69,8 @@
       src = pkgs.fetchFromGitHub {
         owner = "chrisgrieser";
         repo = "nvim-lsp-endhints";
-        rev = "26b070554fce619b870700ea64232bbd80bbc6a7";
-        hash = "sha256-cMv9c72xjNNtjGCdf3pGnTWMTRmPgILcYX6RY61PKqk=";
+        rev = "f9e5ffa17dd1161ea2dda265c1702df78432dad7";
+        hash = "sha256-TXtNf6l+WIT0A0/SgL69DmA9EqQfmLtc4echMUopgWk=";
       };
     })
   ];

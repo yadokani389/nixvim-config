@@ -6,12 +6,13 @@
       src = pkgs.fetchFromGitHub {
         owner = "rachartier";
         repo = "tiny-code-action.nvim";
-        rev = "8888f593c04c8acb29b04a71f6187ef6956be0cd";
-        hash = "sha256-F76w/V6G2L1TzjNQJGrge/edWfsBzvp39RvlGzEUVnA=";
+        rev = "747a42be79be802bbe882cc22c2a8d00a6e6a2fd";
+        hash = "sha256-iOP6zk4v7xZ5nh6+SrWjxZzhOo7D1pJszVp+6Cy1ngs=";
       };
       dependencies = with pkgs.vimPlugins; [
         telescope-nvim
         plenary-nvim
+        snacks-nvim
       ];
     })
   ];
