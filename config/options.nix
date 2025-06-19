@@ -8,9 +8,9 @@
     autoindent = true;
     clipboard = "unnamedplus";
     expandtab = true;
-    shiftwidth = 4;
+    shiftwidth = 2;
     smartindent = true;
-    tabstop = 4;
+    tabstop = 2;
 
     ignorecase = true;
     incsearch = true;
