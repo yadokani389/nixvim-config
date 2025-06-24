@@ -19,5 +19,6 @@
 
     swapfile = false;
     undofile = true; # Build-in persistent undo
+    scrolloff = 3;
   };
 }
