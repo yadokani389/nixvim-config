@@ -40,6 +40,7 @@
           installGhc = true;
         };
         wgsl_analyzer.enable = true;
+        html.enable = true;
       };
       keymaps = {
         diagnostic = {
