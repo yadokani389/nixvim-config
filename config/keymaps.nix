@@ -69,6 +69,11 @@
       action = "D";
     }
     {
+      key = "p";
+      mode = "x";
+      action = ''"_dP'';
+    }
+    {
       mode = "n";
       key = "q:";
       action = "<nop>";
