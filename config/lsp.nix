@@ -13,7 +13,6 @@
           '';
         };
         gopls.enable = true;
-        kotlin_language_server.enable = true;
         nil_ls = {
           enable = true;
           settings = {
