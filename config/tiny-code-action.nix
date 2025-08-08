@@ -6,8 +6,8 @@
       src = pkgs.fetchFromGitHub {
         owner = "rachartier";
         repo = "tiny-code-action.nvim";
-        rev = "747a42be79be802bbe882cc22c2a8d00a6e6a2fd";
-        hash = "sha256-iOP6zk4v7xZ5nh6+SrWjxZzhOo7D1pJszVp+6Cy1ngs=";
+        rev = "597c4a39d5601e050d740f3ef437ee695d1ff3b0";
+        hash = "sha256-+U1GUvfLPZ+4MPi7Q5LG8TJEWJHyS45qbg1dpBk7g98=";
       };
       dependencies = with pkgs.vimPlugins; [
         telescope-nvim
