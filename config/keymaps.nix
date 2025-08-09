@@ -49,14 +49,6 @@
       action = ''"_C'';
     }
     {
-      key = "s";
-      action = ''"_s'';
-    }
-    {
-      key = "S";
-      action = ''"_S'';
-    }
-    {
       key = "x";
       action = "d";
     }
