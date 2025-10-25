@@ -21,6 +21,7 @@
     ./tiny-code-action.nix
     ./ccc.nix
     ./dropbar.nix
+    ./vim-eft.nix
   ];
 
   colorschemes.one.enable = true;
