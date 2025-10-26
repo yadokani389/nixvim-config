@@ -14,7 +14,7 @@
     };
     treesitter-textobjects = {
       enable = true;
-      select = {
+      settings.select = {
         enable = true;
         keymaps = {
           "af" = "@function.outer";
